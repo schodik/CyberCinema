@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="https://kpravda.ru/wp-content/uploads/2021/01/kino.jpg" type="image/png">
+    <title>CyberCinema</title>
+</head>
+<body>
+    <div class="header">
+
+        <div class="container">
+
+            <div class="header-line">
+
+                <div class="nav">
+                    <button onclick="scrollToElement('films')">АФИША</button> 
+                    <button onclick="scrollToElement('info_Cinema')">О НАС</button>
+                    <button onclick="scrollToElement('find_tiket')">ПОИСК БИЛЕТА</button> 
+                </div>
+
+                <div class="logo">
+                    CyberCinema
+                </div>
+
+                <div class="phone">
+                    <input type="text" id="ticketNumberInput">
+                    <button onclick="searchTicket()">Найти билет</button>
+                  </div>
+                    <div id="ticketInfo"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="info_Cinema">
+
+
+        <div class="wrapper">
+
+            <div class="container1" id="c0">
+                <div class="img111"><img src="https://www.osnmedia.ru/wp-content/uploads/2022/03/glavnaya_169.jpg" width="100%"></div>
+                <div class="story" id="s0">
+                    <div class="info">
+                    <h3>Качество</h3>
+                    <p> Откройте для себя шедевры мирового кинематографа, наслаждайтесь классикой и открывайте для себя новые арт-хаус фильмы вместе с CyberCinema. Наша команда постоянно работает над тем, чтобы предложить вам лучший выбор и уютную атмосферу, где каждый фильм становится уникальным событием.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container1" id="c1">
+                <div class="img111"><img src="https://barklain.ru/media/django_ckeditor_5/kinoteatr.jpeg" width="100%"></div>
+
+                <div class="story" id="s1">
+                    <div class="info">
+                        <h3>Комфорт</h3>
+                    <p> CyberCinema приглашает вас на увлекательное кинопутешествие, где каждый фильм становится особым событием. Наши залы пропитаны атмосферой кинематографического волшебства, а наша программа включает в себя самые яркие и популярные фильмы различных жанров.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container1" id="c2">
+                <div class="img111"><img src="https://folksland.net/wp-content/uploads/2018/08/domashniy-kinoteatr-0001.jpg" width="100%"></div>
+                <div class="story" id="s2">
+                    <div class="info">
+                    <h3>Роскошь</h3>
+                    <div class="text_in_story">
+                    <p>Добро пожаловать в CyberCinema - ваш надежный оффлайн кинотеатр, где каждый фильм становится особым событием! Мы - это место, где вы можете насладиться качественным кинематографом в атмосфере настоящего кинотеатра, среди друзей или в одиночестве.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+            </ul>
+            </div>
+        
+        </div>
+
+
+   </div>
+    <div class="body-content">
+        <div class="today">Сегодня на экране</div>
+    </div>
+    <div id="films">
+        <div class="card-for-film1">
+            <div class="img-container">
+                <img src="./img/film1.jpg" href="@" width="100%" class="img-container-film1">
+            </div>
+            <div class="text-for-film">
+                Сергей – врач скорой помощи. Его лучший друг, немец Пауль раньше <br> 
+                перегонял машины в Россию из Германии. Так они и познакомились.<br>
+                У Пауля есть и ещё одно увлечение – антиквариат. Он – чёрный <br>
+                копатель: ищет на полях сражений немецкие награды, каски,<br>
+                оружие и продаёт их за бешеные деньги. Однажды во время<br>
+                раскопок друзья находят засыпанный блиндаж, который переносит<br>
+                их в 1941-й год и сталкивает лицом к лицу с войной – с бойцами, чьи<br>
+                имена они ещё утром видели на могилах…<br>
+                Россия/2024<br>
+                Фильм рекомендован для просмотра зрителям старше 16 лет (16+)
+            </div>
+        
+        </div>
+        <div class="time-for-film1">
+            <button onclick="showFilmInfo('Блиндаж', '13:00', 200)">13:00</button>
+            <button onclick="showFilmInfo('Блиндаж', '15:00', 200)">15:00</button>
+            <button onclick="showFilmInfo('Блиндаж', '17:00', 300)">17:00</button>
+            <button onclick="showFilmInfo('Блиндаж', '19:00', 400)">19:00</button>
+            <button onclick="showFilmInfo('Блиндаж', '21:00', 150)">21:00</button>
+        </div>
+        <div class="card-for-film1">
+            <div class="img-container">
+                <img src="./img/film2.jpeg" href="@" width="100%" class="img-container-film1">
+            </div>
+            <div class="text-for-film">
+                Архитектор Сан Вон с маленькой дочкой переезжают в новый дом.<br>
+                В один из дней совершенно неожиданно девочка исчезает. <br>
+                Развешанные по городу объявления о ее пропаже дают неожиданный эффект<br>
+                – к Сан Вону приходит лучший в стране парапсихолог и предлагает помочь.<br>
+                Он уверен что дочь архитектора, как и многие другие дети,<br>
+                не просто потерялась – ее забрала зловещая сущность, живущая в стенном шкафу! <br>
+                Теперь Сан Вон должен сам отправиться в потусторонний мир и сразиться со злом.<br>
+                США/2023<br>
+                Фильм рекомендован для просмотра зрителям старше 18 лет (18+)
+            </div>
+        </div>
+        <div class="time-for-film1">
+            <button onclick="showFilmInfo('Бугимен>','22:00', 200)">22:00</button>
+            <button onclick="showFilmInfo('Бугимен', '23:00', 200)">23:00</button>
+            <button onclick="showFilmInfo('Бугимен', '00:00', 300)">00:00</button>
+            <button onclick="showFilmInfo('Бугимен', '01:00', 400)">01:00</button>
+            <button onclick="showFilmInfo('Бугимен', '02:00', 150)">02:00</button>
+        </div>
+        <div class="card-for-film1">
+            <div class="img-container">
+                <img src="./img/film3.jpg" href="@" width="100%" class="img-container-film1">
+            </div>
+            <div class="text-for-film">
+                Юный, но отважный панда по имени Пан отправляется в Африку,<br>
+                чтобы спасти свою лучшую подругу — дракона Цзелонь. Теперь его ждёт<br>
+                захватывающее путешествие в удивительный для него мир гор,<br>
+                пустынь и джунглей. Полагаясь на свой ум, доброту и находчивость,<br>
+                он заведёт множество новых друзей среди местных обитателей,<br>
+                ведь у храбрости нет размера, а настоящая дружба не знает преград.<br>
+                Дания/2024<br>
+                Фильм рекомендован для просмотра зрителям старше 6 лет (6+)
+            </div>
+        </div>
+        <div class="time-for-film1">
+            <button onclick="showFilmInfo('Приключения панды', '13:00', 200)">13:00</button>
+            <button onclick="showFilmInfo('Приключения панды', '15:00', 200)">15:00</button>
+            <button onclick="showFilmInfo('Приключения панды', '17:00', 300)">17:00</button>
+            <button onclick="showFilmInfo('Приключения панды', '19:00', 400)">19:00</button>
+            <button onclick="showFilmInfo('Приключения панды', '21:00', 150)">21:00</button>
+        </div>
+        <div class="card-for-film1">
+            <div class="img-container">
+                <img src="./img/film4.jpeg" href="@" width="100%" class="img-container-film1">
+            </div>
+            <div class="text-for-film">
+                Евгений Онегин живёт на широкую ногу: балы, приёмы,<br>
+                театральные премьеры и прочие развлечения, которые может предложить<br>
+                молодому человеку столица. Но светская жизнь давно утомила его,<br>
+                потому известие о болезни живущего в деревне дяди он воспринимает<br>
+                как возможность сбежать от опостылевшего света.<br>
+                Он приезжает в деревню, но дядю застает уже мёртвым. Впрочем,<br>
+                известие о кончине родственника не сильно расстраивает Евгения.<br>
+                Его финансовые дела весьма печальны, а дядя богат, и других наследников, <br>
+                кроме Евгения, у него нет. Евгений запирается в имении, сторонится соседей,<br>
+                которые очень скоро начинают называть его между собой чудаком. <br>
+                Россия/2024<br>
+                Фильм рекомендован для просмотра зрителям старше 12 лет (12+)
+            </div>
+        </div>
+        <div class="time-for-film1">
+            <button onclick="showFilmInfo('Онегин', '13:00', 200)">13:00</button>
+            <button onclick="showFilmInfo('Онегин', '15:00', 200)">15:00</button>
+            <button onclick="showFilmInfo('Онегин', '17:00', 300)">17:00</button>
+            <button onclick="showFilmInfo('Онегин', '19:00', 400)">19:00</button>
+            <button onclick="showFilmInfo('Онегин', '21:00', 150)">21:00</button>
+        </div>
+        <div class="card-for-film1">
+            <div class="img-container">
+                <img src="./img/film5.jpg" href="@" width="100%" class="img-container-film1">
+            </div>
+            <div class="text-for-film">
+                Холодной ненастной ночью в комнату юной Шарлотты через окно падает<br>
+                необычное яйцо, из которого вылупляется странный паук.<br>
+                Зловещее создание становится тайным другом девочки, и ее не настораживает,<br>
+                что паук растет с невообразимой скоростью. Но когда начинают пропадать <br>
+                сначала питомцы соседей, а потом и они сами, Шарлотта понимает, <br>
+                что ее семья и другие выжившие попали в ловушку: за ними охотится гигантский<br>
+                паук, жаждущий человеческой плоти…<br>
+                Австралия/2024<br>
+                Фильм рекомендован для просмотра зрителям старше 18 лет (18+)
+            </div>
+        </div>
+        <div class="time-for-film1">
+            <button onclick="showFilmInfo('Чёрная вдова', '13:00', 200)">13:00</button>
+            <button onclick="showFilmInfo('Чёрная вдова', '15:00', 200)">15:00</button>
+            <button onclick="showFilmInfo('Чёрная вдова', '17:00', 300)">17:00</button>
+            <button onclick="showFilmInfo('Чёрная вдова', '19:00', 400)">19:00</button>
+            <button onclick="showFilmInfo('Чёрная вдова', '21:00', 150)">21:00</button>
+        </div>
+    </div>
+
+
+    <div id="filmPopup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h3 id="filmTitle"></h3>
+        <p id="filmPrice"></p>
+        <button onclick="showSeatMap()">Оплатить</button>
+        <button onclick="closePopup()">Отмена</button>
+      </div>
+      
+      <div id="seatMapPopup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h3>Выберите места</h3>
+        <div class="seat-map"></div>
+        <p>Цена: <span id="totalPrice">0</span> рублей</p>
+        <button onclick="confirmPayment()">Оплатить</button>
+        <button onclick="closePopup()">Отмена</button>
+      </div>
+    <div id="find_tiket">
+      <div id="paymentPopup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p id="paymentInfo"></p>
+      </div>
+
+    
+    <div class="podval">
+        © 2024–2024 CyberCinema
+    </div>
+      <script>
+          function searchTicket() {
+              var ticketNumber = document.getElementById("ticketNumberInput").value;
+              window.open("ticket_info.php?ticket_number=" + ticketNumber, "_blank");
+          }
+      </script>
+</body>
+<script src="main.js"></script>
+</html>

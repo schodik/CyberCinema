@@ -1,0 +1,28 @@
+
+@media(min-width: 2800px){
+
+}
+
+@media(max-width: 1584px){
+    .card-for-film1{
+        font-size: small;
+    }
+}
+
+@media(max-width: 1310px){
+    .card-for-film1{
+        margin-right: 3%;
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 1276px){
+    .logo{
+        font-size: 12px;
+    }
+}
+@media(max-width: 1844px){
+    button{
+        padding: 8px;
+    }
+}

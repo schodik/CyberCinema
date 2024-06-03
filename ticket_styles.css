@@ -1,0 +1,169 @@
+body{
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cabin&display=swap');
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 650px;
+  height: 250px;
+  display: flex;
+  background: rgba(224, 208, 192, 1);
+  position: relative;
+  border-radius: 15px;
+  background-image: url("https://i.ibb.co/XY8LC2T/map.png");
+  background-size: 350px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.boarding{
+  position: absolute;
+  background-color:rgb(160, 129, 100);
+  height: 249px;
+  width: 100px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+h1{
+  position: absolute;
+  width: 250px;
+  transform: rotate(-90deg);
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+}
+
+.titulo{
+  color: rgb(160,129,100);
+  text-align: left;
+  width: 80%;
+  font-size: 15px;
+  margin-top: 5px;
+
+}
+
+.fa-plane{
+  color: rgb(160,129,100);
+  font-size: 30px;
+  padding: 5px;
+  text-align: left;
+}
+
+.informacion p{
+  font-size: 12px;
+  margin-top: 10px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.informacion h2{
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 3px;
+  font-family: 'ABeeZee', sans-serif;
+
+}
+
+.informacion{
+  padding-bottom: 20px;
+}
+
+.titulo h2{
+  text-align: left;
+}
+
+.infodos{
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  width: 70%;
+  border-top: 2px solid rgb(160,129,100);
+  border-bottom: 2px solid rgb(160,129,100);
+
+
+}
+
+.infodos p{
+  width: 22%;
+  line-height: 2px;
+  padding: 8px;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.izquierda{
+  width: 15%;
+}
+.derecha{
+  width: 85%;
+  padding-left: 10px;
+}
+
+.linea{
+  border-right: 3px dashed rgb(160,129,100);
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  left: 38%;
+}
+
+.bold{
+  font-weight: bold;
+}
+.fa-barcode{
+  position: absolute;
+  font-size: 80px;
+  top:130px;
+  right:10px;
+  transform: rotate(90deg);
+}
+span .fa-barcode{
+  position: absolute;
+  font-size: 80px;
+  top:45px;
+  right:10px;
+  transform: rotate(90deg);
+}
+.tiket{
+  position: absolute;
+  margin-left: 380px;
+  margin-top: 100px;
+}
+
+.tiket p{
+  font-size: 30px;
+}
+
+.tiket h3{
+  font-size: 12px;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.marca{
+  font-size: 7px;
+  color:rgb(160,129,100);
+  transform: rotate(-90deg);
+  position: absolute;
+  margin-left:390px;
+  margin-top: 120px;
+}
