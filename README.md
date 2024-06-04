@@ -14,6 +14,8 @@
 4. Скачайте MysqlWorkBench и создайте в ней свою базу данных, туториал по установке (https://it.vshp.online/#/pages/manuals/mysql_manual)
 5. Вставьте в БД код:
 ```sql
+create database tickets;
+use tickets;
 CREATE TABLE `tickets` (
   `id` int NOT NULL AUTO_INCREMENT,
   `film_title` varchar(255) DEFAULT NULL,
