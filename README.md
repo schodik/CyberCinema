@@ -33,7 +33,6 @@ CREATE TABLE `tickets` (
    ```PHP
     $username = "urUsername";
     $password = "urPassword";
-    $dbname = "urDatabaseName";
    ```
 
 ## Запуск
