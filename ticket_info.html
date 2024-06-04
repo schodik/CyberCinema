@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск билета</title>
+</head>
+<body>
+    <h2>Введите уникальный номер билета:</h2>
+    <input type="text" id="ticketNumberInput">
+    <button onclick="searchTicket()">Найти билет</button>
+
+    <div id="ticketInfo"></div>
+
+    <script>
+        function searchTicket() {
+            var ticketNumber = document.getElementById("ticketNumberInput").value;
+            window.open("ticket_info.php?ticket_number=" + ticketNumber, "_blank");
+        }
+    </script>
+</body>
+</html>

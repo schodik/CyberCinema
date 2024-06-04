@@ -20,7 +20,6 @@
                 <div class="nav">
                     <button onclick="scrollToElement('films')">АФИША</button> 
                     <button onclick="scrollToElement('info_Cinema')">О НАС</button>
-                    <button onclick="scrollToElement('find_tiket')">ПОИСК БИЛЕТА</button> 
                 </div>
 
                 <div class="logo">
@@ -38,9 +37,6 @@
         </div>
 
     </div>
-    <div id="info_Cinema">
-
-
         <div class="wrapper">
 
             <div class="container1" id="c0">
@@ -80,11 +76,12 @@
         </div>
 
 
-   </div>
+    </div>
     <div class="body-content">
         <div class="today">Сегодня на экране</div>
     </div>
     <div id="films">
+    <div class="film_container">
         <div class="card-for-film1">
             <div class="img-container">
                 <img src="./img/film1.jpg" href="@" width="100%" class="img-container-film1">
@@ -110,6 +107,8 @@
             <button onclick="showFilmInfo('Блиндаж', '19:00', 400)">19:00</button>
             <button onclick="showFilmInfo('Блиндаж', '21:00', 150)">21:00</button>
         </div>
+    </div>
+    <div class="film_container">
         <div class="card-for-film1">
             <div class="img-container">
                 <img src="./img/film2.jpeg" href="@" width="100%" class="img-container-film1">
@@ -133,6 +132,8 @@
             <button onclick="showFilmInfo('Бугимен', '01:00', 400)">01:00</button>
             <button onclick="showFilmInfo('Бугимен', '02:00', 150)">02:00</button>
         </div>
+    </div>
+    <div class="film_container">
         <div class="card-for-film1">
             <div class="img-container">
                 <img src="./img/film3.jpg" href="@" width="100%" class="img-container-film1">
@@ -155,6 +156,8 @@
             <button onclick="showFilmInfo('Приключения панды', '19:00', 400)">19:00</button>
             <button onclick="showFilmInfo('Приключения панды', '21:00', 150)">21:00</button>
         </div>
+    </div>
+    <div class="film_container">
         <div class="card-for-film1">
             <div class="img-container">
                 <img src="./img/film4.jpeg" href="@" width="100%" class="img-container-film1">
@@ -181,6 +184,8 @@
             <button onclick="showFilmInfo('Онегин', '19:00', 400)">19:00</button>
             <button onclick="showFilmInfo('Онегин', '21:00', 150)">21:00</button>
         </div>
+    </div>
+    <div class="film_container">
         <div class="card-for-film1">
             <div class="img-container">
                 <img src="./img/film5.jpg" href="@" width="100%" class="img-container-film1">
@@ -205,6 +210,7 @@
             <button onclick="showFilmInfo('Чёрная вдова', '21:00', 150)">21:00</button>
         </div>
     </div>
+    </div>
 
 
     <div id="filmPopup" class="popup">
@@ -223,11 +229,23 @@
         <button onclick="confirmPayment()">Оплатить</button>
         <button onclick="closePopup()">Отмена</button>
       </div>
-    <div id="find_tiket">
+
       <div id="paymentPopup" class="popup">
         <span class="close" onclick="closePopup()">&times;</span>
         <p id="paymentInfo"></p>
       </div>
+
+
+    <div id="info_Cinema">
+    <div class="info_bottom_cinema">
+        Мы — сеть современных кинотеатров, предлагающая зрителям широкий репертуар фильмов и максимальный уровень комфорта при их просмотре.<br>
+        У нас вы найдёте всё для идеального вечера: последние новинки кинопроката, уютную атмосферу, вкусный попкорн и освежающие напитки.<br>
+        Для вашего удобства мы предусмотрели несколько залов с разным количеством мест и возможностью бронирования билетов онлайн.<br>
+        Наше расписание обновляется ежедневно, поэтому вы всегда сможете выбрать фильм, который соответствует вашим вкусам и настроению.
+        Наша команда профессионалов заботится о том, чтобы каждый гость получил максимум удовольствия от посещения нашего кинотеатра.<br>
+         Мы постоянно совершенствуем качество наших услуг и стремимся стать ещё лучше. Приходите к нам, и вы убедитесь, что мы делаем всё возможное, чтобы ваш отдых был незабываемым!<br>
+    </div>
+
 
     
     <div class="podval">

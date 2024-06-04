@@ -63,8 +63,11 @@ button{
     padding-right: 55px;
     margin-top: 55px;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
+    gap: 60px 20px;
 }
 
 .today{
@@ -75,11 +78,10 @@ button{
 }
 
 .card-for-film1{
-    margin-top: 20px;
+    height: 680px;
     position: relative;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: bold;
-    margin-right: 799px;
     display: flex;
     background-image: url(./img/ahahaha.jpg);
     border-radius: 62px;
@@ -147,10 +149,18 @@ button{
   }
 
 
+  .info_bottom_cinema{
+    background: url(./img/ahahaha.jpg);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 10px;
+    border-radius: 40px;
+  }
 
 
-
-
+  .film_container{
+    width: 100%;
+  }
 
 
 
@@ -368,6 +378,7 @@ li:nth-child(2) {
     margin-left: -114px;
     margin-right: -6px;
     margin-bottom: -10px;
+    margin-top: 15px;
 }
 
 #ticketNumberInput{
