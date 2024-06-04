@@ -27,9 +27,11 @@ CREATE TABLE `tickets` (
 ```
 7. Скачайте VisualStudio 
 8. Откройте файл ticket_info.php и save_ticket.php, замените с сохранением
+   ```PHP
     $username = "urUsername";
     $password = "urPassword";
     $dbname = "urDatabaseName";
+   ```
 
 ## Запуск
 
