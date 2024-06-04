@@ -28,7 +28,7 @@ CREATE TABLE `tickets` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 ```
-7. Скачайте VisualStudio 
+7. Скачайте VisualStudio (https://code.visualstudio.com/)
 8. Откройте файл ticket_info.php и save_ticket.php, замените с сохранением
    ```PHP
     $username = "urUsername";
@@ -42,7 +42,7 @@ CREATE TABLE `tickets` (
 ```bash
 php -S 127.0.0.1:8000
 ```
-зайдите на 127.0.0.1:8000
+зайдите на 127.0.0.1:8000 В любом удобном для вас браузере
 
 ## Дополнительные материалы
 
