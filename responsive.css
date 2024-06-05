@@ -1,21 +1,57 @@
-@media(max-width: 1844px){
-
+@media screen and (max-width: 1844px){
     .img-container-film1{
         height: 85%;
     }
-
-
     .card-for-film1{
         font-size: 14px;
         height: 519px;
 
     }
-
     button{
         padding: 8px;
     }
-
     .info_bottom_cinema{
         font-size: 14px;
     }
+}
+
+@media screen and (max-width: 990px) {
+    .wrapper {
+        display: none;
+        perspective: 0px;
+    }
+    .body-content{
+        margin-top: 40px;
+    }
+
+    #films{
+        grid-template-columns: 1fr;
+    }
+
+    .time-for-film1{
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-container{
+        width: 55%;
+    }
+
+    button{
+        font-size: 14px;
+    }
+
+    .card-for-film1{
+        height: 422px;
+    }
+
+    .info_bottom_cinema{
+        font-size: 6px;
+     }
+
+
+     .podval{
+        font-size: 9px;
+     }
 }

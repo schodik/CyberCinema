@@ -2,9 +2,9 @@
 $ticket_number = $_GET['ticket_number'];
 
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tickets";
+$username = "u2640134_Tikets";
+$password = "5523618OLga";
+$dbname = "u2640134_Tikets";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
